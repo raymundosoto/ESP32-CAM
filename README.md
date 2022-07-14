@@ -99,7 +99,7 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 
 Ahora has configurado el sistema de forma adecuada para que el IDE de Arduino pueda programar el ESP32CAM.
 
-
+:)
 
 
 
