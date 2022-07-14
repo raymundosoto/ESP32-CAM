@@ -77,7 +77,7 @@ Ahora has configurado el sistema de forma adecuada para que el IDE de Arduino pu
 
 :)
 
-
+![arduino_checar](https://user-images.githubusercontent.com/72757419/179071093-fb390a00-b44f-4c45-8317-0db00c1e5885.JPG)
 
 
 
