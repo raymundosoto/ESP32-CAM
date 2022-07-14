@@ -45,51 +45,27 @@ Nota: Los siguientes comandos parten del hecho de que tienes GIT instalado previ
 
 sudo usermod -a -G dialout $USER
 
-Copy
-
 wget https://bootstrap.pypa.io/get-pip.py
-
-Copy
 
 sudo apt-get install python3-distutils
 
-Copy
-
 sudo apt-get install python3-apt
-
-Copy
 
 sudo python3 get-pip.py
 
-Copy
-
 sudo pip3 install pyserial
-
-Copy
 
 mkdir -p ~/Arduino/hardware/espressif
 
-Copy
-
 cd ~/Arduino/hardware/espressif
-
-Copy
 
 git clone https://github.com/espressif/arduino-esp32.git esp32
 
-Copy
-
 cd esp32
-
-Copy
 
 git submodule update --init --recursive
 
-Copy
-
 cd tools
-
-Copy
 
 python3 get.py
 
