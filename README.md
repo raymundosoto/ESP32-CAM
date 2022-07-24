@@ -79,5 +79,35 @@ Ahora has configurado el sistema de forma adecuada para que el IDE de Arduino pu
 
 ![arduino_checar](https://user-images.githubusercontent.com/72757419/179071093-fb390a00-b44f-4c45-8317-0db00c1e5885.JPG)
 
+Conexión de la SP32_CAM
+Se realiza la siguiente conexión entre la SP32CAM y el FTDI
+
+![imagen](https://user-images.githubusercontent.com/72757419/180626414-8fa6cdd5-09bd-48da-84c8-23fb65f2b9bf.png)
+
+Las conexiones deben tener el siguiente orden
+
+ESP32CAM 	FTDI
+5V 	      Vcc
+GND 	     GND
+UOT 	     RX
+UOR 	     TX
+IO0-GND Para entrar en el modo programador y conectar el FTDI al equipo de cómputo
+
+Las conexiones se verán así
+![imagen](https://user-images.githubusercontent.com/72757419/180626497-e5d6b25f-febf-43e2-9903-23082974f337.png)
+![imagen](https://user-images.githubusercontent.com/72757419/180626501-9a6209a1-6948-4a35-83c7-efc09938d74e.png)
+
+Nota: Después de conectra el cable del FTDi a la computadora hay que activar los puerrtos USB en la máquina virtual.
+- Activar el monitor serial en el arduino IDe para observar que está listo para programar la SP32 CAM
+- Cargar el programa de CAmeraWebServer en la tarjeta SP32CAM seleccionando la tarjeta adecuada
+- Esperara hasta que aparezca Hard resetting via RTS pins
+- Quitar el jumper o el cable  conecto IO0-GND para salir del modo programador
+- Resetear el SP32CAM
+- Si todo salió bien aparecerá el mensaje en el monitor serial dandonos la IP para comenzar el streaming 
+![imagen](https://user-images.githubusercontent.com/72757419/180626634-212ac296-444c-41e5-b659-211871fb7d3c.png)
+El resultado es este
+![imagen](https://user-images.githubusercontent.com/72757419/180626937-1c44865b-9fb3-4b19-bb4d-e3b810d54670.png)
+
+
 
 
